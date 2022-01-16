@@ -1,0 +1,174 @@
+.container {
+    padding: 0px 50px 50px 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.search-bar-wrapper {
+    width: calc(100vw - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 1240px;
+}
+
+.search-bar h2 {
+    margin-top: 5px;
+}
+
+input {
+    width: calc(100vw - 150px);
+    max-width: 1240px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 24px;
+    border-radius: 13px;
+    outline: none;
+    border: 1px solid #D1CFD1;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cat-card {
+    background-color: #D1CFD1;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: 0px 15px 30px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.cat-image {
+    min-height: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.card-content {
+    padding: 0px 15px;
+}
+
+select {
+    height: 35px;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+option {
+    min-height: 30px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-fullpage {
+    width: 100%;
+    height: calc(100vh - 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-image {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found {
+    height: calc(100vh - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.not-found h2 {
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+    input {
+        width: calc(100vw - 50px);
+        font-size: 14px;
+    }
+    .search-bar h2 {
+        font-size: 14px;
+    }
+}
