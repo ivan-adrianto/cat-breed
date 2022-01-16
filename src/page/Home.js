@@ -84,7 +84,7 @@ function Home() {
 
   return (
     <div className="container">
-      <h1 className="title">find breed</h1>
+      <h1 className="title text-white">find breed</h1>
       <div className="search-bar-wrapper">
         <div className="search-bar">
           <input
@@ -128,7 +128,7 @@ function Home() {
           )}
           <div className="cards-container">
             {catList.length < 1 ? (
-              <div className="not-found">
+              <div className="not-found text-white">
                 <img src={noBreed} alt="no-cat" height={200} width={200} />
                 <h2>{!searchedCat ? "Purrrrr..." : "No Cat Breed Found"}</h2>
               </div>
